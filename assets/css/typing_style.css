@@ -1,0 +1,30 @@
+.input-animation {
+    width: 40em;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 2.0s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+}
+
+/* 打印效果 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 40em;
+    }
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}

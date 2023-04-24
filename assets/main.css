@@ -1,0 +1,190 @@
+/*  */
+
+
+  
+/* body {
+align-items: center;
+background-color: #fff;
+display: flex;
+font-family: Roboto;
+justify-content: center;
+margin: 0;
+min-height: 100vh;
+padding: 0;
+}
+
+h1 {
+color: var(--blue);
+font-family: Parisienne, Roboto;
+font-size: 80px;
+text-align: center;
+margin: 20px 0;
+} */
+
+/* 天氣 */
+.container__inner {
+display: flex;
+}
+
+.title__container {
+align-items: center;
+display: flex;
+}
+
+.title {
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+.weatherIcon {
+align-items: center;
+background-color: #fff;
+border-radius: 50%;
+display: flex;
+height: 46px;
+justify-content: center;
+margin-right: 15px;
+width: 46px;
+}
+
+.sunny .weatherIcon {
+    color: #f9c129;
+}
+
+.partialy-cloudy .weatherIcon {
+color: #77a6c5;
+}
+
+.rainy .weatherIcon {
+color: #575757;
+}
+
+.weatherCard {
+border-radius: 25px;
+display: flex;
+flex-direction: column;
+/* height: 200px; */
+justify-content: space-between;
+margin: 10px;
+padding: 10px;
+}
+
+.sunny {
+    background-color: rgb(255, 124, 124);
+    background-size: cover;
+    color: #343333;
+}
+
+.partialy-cloudy {
+/* background: url('https://images.unsplash.com/photo-1566437036079-0e00cc9ea796?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjAwNjA4NDI&ixlib=rb-1.2.1&q=80'); */
+/* background-color: rgb(159, 181, 200) ; */
+background-color: rgb(224, 192, 149);
+
+background-size: cover;
+color: var(--blue);
+}
+
+.rainy {
+/* background: url('https://images.unsplash.com/photo-1534261271554-002a32561480?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjAwODA3NDg&ixlib=rb-1.2.1&q=80'); */
+/* background-color: rgb(72, 72, 72); */
+background-color: rgb(116, 67, 39);
+background-size: cover;
+color: #fff;
+}
+
+.info__container {
+display: flex;  
+}
+
+.temperature {
+align-items: center;
+display: flex;
+margin: 5px 0;
+}
+
+.temperature__max {
+font-size: 20px;
+}
+
+.temperature__min {
+/* align-items: center; */
+/* background-color: #fff;
+border-radius: 8px; */
+color: #317df8;
+/* display: inline-flex; */
+font-size: 18px;
+/* margin-left: 15px; */
+padding: 0px 4px;
+/* height: 34px; */
+}
+
+.visibility {
+    background-color: #ffffff;
+    color: #000;
+    margin: 0 15px;
+    padding: 4px 10px;
+    border-radius: 15px;
+  }
+
+.info__title {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  
+.info__value {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+/* 圖片 */
+
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  /* border: none; */
+  border-radius: 10px;
+  border: 3px solid;
+  box-shadow: 5px 10px #888888;
+   
+}
+
+.bday-decor {
+  /* Emojis are text - so here we are setting a font-size to make them bigger */ 
+  font-size: 96px;
+}
+
+/* Positioning for the emojis - play around with the values to change the placement of your decorations */ 
+.bday-decor--top-right { 
+  position: absolute;
+  bottom: -70px;
+  right: -20px;
+}
+
+.bday-decor--top-left {
+  position: absolute;
+  bottom: 0px;
+  left: -25px;
+}
+
+.bday-decor--bottom-right {
+  position: absolute; 
+  right: 20px;
+}
+
+/* float */ 
+.float {
+  animation-name: float;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
